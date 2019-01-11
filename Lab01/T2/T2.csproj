@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2A7DD5E-8DDE-49BF-8DEB-3A5C1EE1F671}</ProjectGuid>
+    <ProjectGuid>{D29E58F3-D922-432C-B8EC-7C5CF4FF6B19}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>T1</RootNamespace>
-    <AssemblyName>T1</AssemblyName>
+    <RootNamespace>T2</RootNamespace>
+    <AssemblyName>T2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="T1.cs" />
+    <Compile Include="T2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
