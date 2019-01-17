@@ -16,8 +16,9 @@ namespace T1
         {
             try
             {
-                Console.Write("Give a number...");
-                int number = int.Parse(Console.ReadLine());
+                int number;
+                Console.Write("Give a number... (1-3) : ");
+                number = int.Parse(Console.ReadLine());
                 if (number == 1)
                 {
                     Console.WriteLine("Number is one");
