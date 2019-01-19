@@ -14,8 +14,18 @@ namespace Lab02
         static void Main(string[] args)
         {
             try 
-	        {	        
-		        
+	        {
+                int x; // rivien määrä
+                Console.WriteLine("Give number of rows? ");
+                x = int.Parse(Console.ReadLine());
+
+                for (int i = 0; i < x; i++)
+                    {
+                    for ( int y = 0; y<(i+1); y++)
+                        Console.Write("*");
+                    Console.WriteLine();
+                    }
+                Console.ReadLine();
 	        }
 	        catch (Exception ex)
 	        {
