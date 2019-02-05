@@ -10,22 +10,46 @@ namespace Jamk.It.OO
     {
         // field variables
         // properties
-        public string Merkki { get; set; }
-
+        public string Merkki {get; set;}
+        public int Lämpötila {get; set;}
+        public int Kosteus {get; set;}
+        public string Kytkin {get; set;}
         // constructors
         // methods
-        public bool Päällä(string päällä)
+        public bool Käynnistys()
         {
-            Console.WriteLine("Onko kiuas päällä? K = kyllä / E = ei");
-            päällä = Console.ReadLine();
-            if (päällä == "K" || päällä == "k")
+            Console.WriteLine("Käynnistetäänkö kiuas? 1 = kyllä / kaikki muut merkit pitävät kiukaan pois päältä");
+            Kytkin = Console.ReadLine();
+            if (Kytkin == "1")
                 return true;
             else
                 return false;
-                
         }
-        public int lämpötila;
-        public int kosteus;
+        public int LämpötilanSäätö()
+        {
+            Console.WriteLine("Anna haluttu lämpötila: ");
+            Lämpötila = int.Parse(Console.ReadLine());
+            return Lämpötila;
+        }
+        public int KosteudenSäätö()
+        {
+            Console.WriteLine("Anna haluttu kosteusprosentti: ");
+            Kosteus = int.Parse(Console.ReadLine());
+            return Kosteus;
+        }
+        public void Yhteenveto()
+        {
+            Console.WriteLine("Kiuas on nyt säädetty {0} asteeseen ja kosteusprosentti on {1}. Mukavia löylyhetkiä!", Lämpötila, Kosteus);
+        }
+        public bool Lopetus()
+        {
+            Console.WriteLine("Jatketaanko saunomista ja muutetaan asetuksia? 1 = kyllä / kaikki muut valinnat sammuttavat kiukaan!");
+            Kytkin = Console.ReadLine();
+            if (Kytkin == "1")
+                return true;
+            else
+                return false;
+        }
         // events
         // indexer
         // destructor

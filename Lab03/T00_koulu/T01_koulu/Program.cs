@@ -29,10 +29,11 @@ namespace Jamk.It.OO
                         Console.WriteLine("Älä hyydy kone!");
                     //perskules polliisi puskassa, jarrutetaan!
                     if (car.Speed > 100)
-                        car.Brake(10);
+                        car.Brake(5);
                 }
                 // lopetus
                 Console.WriteLine("Bensa loppu ja mittari näytti: {0} ", car.Speed);
+                Console.ReadLine();
             }
             catch (Exception ex)
             {
