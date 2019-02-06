@@ -30,12 +30,9 @@ namespace Jamk.It.OO
             Kytkin = kytkin;
         }
         // methods
-        public string Pesuohjelmanvalinta()
+        public string ValitsePesuohjelma(int valinta)
         {
-            int Valinta=0;
-            Console.WriteLine("Valitse haluttu pesuohjelma: 1 = valkopyykki, 2 = kirjopesu tai 3 = hienopesu");
-            Valinta = int.Parse(Console.ReadLine());
-            switch (Valinta)
+            switch (valinta)
             {
                 case 1:
                     Console.WriteLine("Valittu pesuohjelmaksi: valkopyykki");
