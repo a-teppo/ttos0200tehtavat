@@ -16,36 +16,29 @@ namespace Jamk.It.OO
         public string Kytkin {get; set;}
         // constructors
         // methods
-        public bool Käynnistys()
+        public bool Käynnistys(string valinta)
         {
-            Console.WriteLine("Käynnistetäänkö kiuas? 1 = kyllä / kaikki muut merkit pitävät kiukaan pois päältä");
-            Kytkin = Console.ReadLine();
-            if (Kytkin == "1")
+            if (valinta == "1")
                 return true;
             else
                 return false;
         }
-        public int LämpötilanSäätö()
+        public int LämpötilanSäätö(int temp)
         {
-            Console.WriteLine("Anna haluttu lämpötila: ");
-            Lämpötila = int.Parse(Console.ReadLine());
             return Lämpötila;
         }
-        public int KosteudenSäätö()
+        public int KosteudenSäätö(int kosteus)
         {
-            Console.WriteLine("Anna haluttu kosteusprosentti: ");
-            Kosteus = int.Parse(Console.ReadLine());
             return Kosteus;
         }
-        public void Yhteenveto()
+        public void Yhteenveto(int temp, int kosteus)
         {
-            Console.WriteLine("Kiuas on nyt säädetty {0} asteeseen ja kosteusprosentti on {1}. Mukavia löylyhetkiä!", Lämpötila, Kosteus);
+            Lämpötila = temp;
+            Kosteus = kosteus;
         }
-        public bool Lopetus()
+        public bool Lopetus(string valinta)
         {
-            Console.WriteLine("Jatketaanko saunomista ja muutetaan asetuksia? 1 = kyllä / kaikki muut valinnat sammuttavat kiukaan!");
-            Kytkin = Console.ReadLine();
-            if (Kytkin == "1")
+            if (valinta == "1")
                 return true;
             else
                 return false;
