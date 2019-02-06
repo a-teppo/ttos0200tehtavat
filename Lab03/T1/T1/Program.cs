@@ -17,30 +17,30 @@ namespace Jamk.It.OO
         {
             try
             {
-                bool päällä = false;
+                //bool isOn = true;
                 Kiuas harvia = new Kiuas();
                 harvia.Merkki = "Harvia";
                 Console.WriteLine("Tervetuloa saunomaan kiukaamme on merkiltään {0} ", harvia.Merkki);
                 Console.WriteLine("Käynnistetäänkö kiuas? 1 = kyllä / kaikki muut merkit pitävät kiukaan pois päältä");
                 string valinta;
                 valinta = Console.ReadLine();
-                päällä = harvia.Käynnistys(valinta);
-                while (päällä)
+                harvia.Käynnistä(valinta);
+                while (harvia.On)
                     {
                     Console.WriteLine("Kiuas on nyt päällä ja voit säätää kiukaan lämpötilaa sekä kosteutta");
                     Console.WriteLine("Anna haluttu lämpötila: ");
                     int lämpötila;
                     lämpötila = int.Parse(Console.ReadLine());
-                    harvia.LämpötilanSäätö(lämpötila);
+                    harvia.SäädäLämpötila(lämpötila);
                     Console.WriteLine("Anna haluttu kosteusprosentti: ");
                     int kosteus;
                     kosteus = int.Parse(Console.ReadLine());
-                    harvia.KosteudenSäätö(kosteus);
-                    harvia.Yhteenveto(lämpötila,kosteus);
+                    harvia.SäädäKosteus(kosteus);
+                    harvia.Yhteenvedä(lämpötila,kosteus);
                     Console.WriteLine("Kiuas on nyt säädetty {0} asteeseen ja kosteusprosentti on {1}. Mukavia löylyhetkiä!", harvia.Lämpötila, harvia.Kosteus);
                     Console.WriteLine("Jatketaanko saunomista ja muutetaan asetuksia? 1 = kyllä / kaikki muut valinnat sammuttavat kiukaan!");
                     valinta = Console.ReadLine();
-                    päällä = harvia.Lopetus(valinta);
+                    harvia.Lopeta(valinta);
                     }
                 Console.WriteLine("Kiuas on pois päältä ja ohjelma lopetetaan!");
                 Console.ReadLine();

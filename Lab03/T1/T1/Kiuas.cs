@@ -9,39 +9,45 @@ namespace Jamk.It.OO
     public class Kiuas
     {
         // field variables
+        private bool isOn;
         // properties
+        public bool On 
+        {
+            get { return isOn;}
+            set { }
+        }
         public string Merkki {get; set;}
         public int Lämpötila {get; set;}
         public int Kosteus {get; set;}
         public string Kytkin {get; set;}
         // constructors
         // methods
-        public bool Käynnistys(string valinta)
+        public bool Käynnistä(string valinta)
         {
             if (valinta == "1")
-                return true;
+                return isOn = true;
             else
-                return false;
+                return isOn = false;
         }
-        public int LämpötilanSäätö(int temp)
+        public int SäädäLämpötila(int temp)
         {
             return Lämpötila;
         }
-        public int KosteudenSäätö(int kosteus)
+        public int SäädäKosteus(int kosteus)
         {
             return Kosteus;
         }
-        public void Yhteenveto(int temp, int kosteus)
+        public void Yhteenvedä(int temp, int kosteus)
         {
             Lämpötila = temp;
             Kosteus = kosteus;
         }
-        public bool Lopetus(string valinta)
+        public bool Lopeta(string valinta)
         {
             if (valinta == "1")
-                return true;
+                return isOn = true;
             else
-                return false;
+                return isOn = false;
         }
         // events
         // indexer
