@@ -15,6 +15,7 @@ namespace JAMK.IT.TTOS0200
         static void TestaaKissat()
         {
             //Vaihe 1
+            
             Kissa kissa1 = new Kissa();
             Kissa kissa2 = new Kissa();
             kissa1.Nimi = "Karvinen"; kissa1.Väri = "Punertava";
