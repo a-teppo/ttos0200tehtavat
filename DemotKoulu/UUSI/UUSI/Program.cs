@@ -18,6 +18,10 @@ namespace UUSI
 {
     class Program
     {
+        static void TestVehicle()
+            {
+            
+            }
         static void Main(string[] args)
         {
             Bike bike = new Bike("Jopo", "Street", 2016, "Blue");

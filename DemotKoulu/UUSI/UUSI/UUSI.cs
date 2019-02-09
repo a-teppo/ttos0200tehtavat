@@ -42,6 +42,11 @@ namespace UUSI
            ModelYear = modelyear;
             Color = color;
         }
+        //methods
+        public override string ToString()
+        {
+            return $"{Manufacturer} {Model} {Size}";
+        }
     }
 
     public class Boat : Vehicle
