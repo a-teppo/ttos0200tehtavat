@@ -36,6 +36,9 @@ namespace Jamk.It.OO
                     Console.WriteLine("Opiskelija nimeltä {0} on iältään {1} ja asuu osoitteessa {2} sekä harrastaa {3}", item.Name, item.Age, item.Address, item.Hobby);
                 }  
         }*/
-                
+        public void Organice()
+            {
+            Array.Sort<>
+            }
     }
 }
