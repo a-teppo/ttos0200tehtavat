@@ -35,11 +35,6 @@ namespace Jamk.It.OO
                 {
                     Console.WriteLine("Opiskelija nimeltä {0} on iältään {1} ja asuu osoitteessa {2} sekä harrastaa {3}", item.Name, item.Age, item.Address, item.Hobby);
                 }
-                Oppilaat oppilaat;
-                for (int i = 0; i < 5; i++)
-                {
-                    Console.WriteLine();
-                }
 
                 Console.ReadLine();
             }
@@ -51,20 +46,6 @@ namespace Jamk.It.OO
             }
         }
 
-        public struct Oppilaat
-        {
-            public string Name { get; }
-            public int Age { get; }
-            public string Address { get; }
-            public string Hobby { get; }
-        }
-        public Oppilaat(string name, int age, string address, string hobby)
-        {
-            Name = name;
-            Age = age;
-            Address = address;
-            Hobby = hobby;
-        }
     }
 
 }
