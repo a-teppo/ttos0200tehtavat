@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace T6
 {
-    class Liiga
+    public class Liiga
     {
         public string TeamName { get; set; }
         public int PlayedGames { get; set; }
