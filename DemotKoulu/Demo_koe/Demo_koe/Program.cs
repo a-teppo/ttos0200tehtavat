@@ -73,6 +73,7 @@ namespace JAMK.IT.TTOS0200
             try
             {
                 TestaaKissat();
+                Console.ReadLine();
             }
             catch (Exception ex)
             {
