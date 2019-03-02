@@ -8,13 +8,11 @@ namespace T1
 {
     public class Tank
     {
-
         //fields
         private string name;
         private string type;
         private int crewcount;
         private float speed;
-
 
         // properties
         private readonly float SpeedMax = 100;
@@ -53,7 +51,6 @@ namespace T1
             Type = type;
             CrewCount = crewcount;
         }
-
 
         public float AccerelateTo(int more)
         {
