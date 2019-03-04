@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-/* Lab05 T1
+/* Lab05 T2
  * Antti Teppo
- * 03.03.2019
- * bool OnkoLuku(string syote): metodi tutkii annetun merkkijonon ja palauttaa true, jos syöte on muunnettavissa luvuksi
- * (kokonaisluku tai desimaaliluku erottimena pilkku, pistettä ei hyväksytä).
- * Tee testausta varten luokka TestiPeti, ja sinne sopiva metodi, jolla testaat erilaisia vaihtoehtoja.
- * Alla esimerkin omainen Metodin OnkoLuku testaus kelvollisilla ja epäkelvoilla syötteillä.
+ * 04.03.2019
+ *Tee luokkaan ItMath staattinen metodi:
+ * Päivämäärän tarkastaminen
+* bool OnkoPvm(string syote): metodi tutkii annetun merkkijonon ja palauttaa true, jos syöte on suomalaisessa päivämäärämuodossa siis joko muotoa "pp.kk.vv" tai "pp.kk.vvvv",
+* eli metodi esimerkiksi tunnistaa seuraavat merkkijonot päivämääriksi "1.2.13", "1.10.2017", "12.12.2017", "24.12.17"
+* Seuraavia syötteitä ei kelpuuteta: "12,12,2016" --> väärä erotin, tai "12.13.2017" --> väärä kuukausi tai "30.2.2017" --> helmikuussa ei ole kolmeakymmentä päivää!
  */
- 
+
 namespace T1
 {
     class Program
     {
-        static void DoTest()
+        static void DoTest1()
         {
             ItMath first = new ItMath("11", false);
             ItMath second = new ItMath("11.11", false);
@@ -40,7 +41,7 @@ namespace T1
             TestiPeti.TestMethod("12.12");
             TestiPeti.TestMethod("-32");
             while (true)
-                {
+            {
                 Console.WriteLine("Give a new numeric string to computer?");
                 string answer2 = Console.ReadLine();
                 TestiPeti.TestMethod(answer2);
@@ -48,15 +49,22 @@ namespace T1
                 string answer3 = Console.ReadLine();
                 if (answer3 == "N" || answer3 == "n")
                     break;
-                }
+            }
 
+        }
+
+        static void DoTest2()
+        {
+            Console.WriteLine("Give new datetime: ?");
+            string newTime = Console.ReadLine();
+            Console.WriteLine(ItMath.OnkoPvm(newTime));
         }
 
         static void Main(string[] args)
         {
             try
             {
-                DoTest();
+                DoTest2();
                 Console.ReadLine();
             }
             catch (Exception ex)
