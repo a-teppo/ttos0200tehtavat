@@ -3,7 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/*Lab06 T1
+ * 5.3.2019
+ * Antti Teppo
+ * Ohjelmassa tulee pystyä käsittelemään työntekijöiden tietoja (Employee). Työntekijöiden osalta seuraavia tietoa pitää pystyä käsittelemään: 
+ * työntekijän nimi (Name), työntekijän ammatti (Profession) ja palkka (Salary).
+ * Samassa ohjelmassa pitää pystyä käsittelemään myös johtajien tietoja (Boss), heillä on edellisten lisäksi myös auto (Car) ja palkkabonus (Bonus).
+ * 
+ */
 namespace Jamk.It.OO
 {
     class Program
