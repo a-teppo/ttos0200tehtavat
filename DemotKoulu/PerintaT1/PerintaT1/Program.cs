@@ -28,6 +28,7 @@ namespace JAMK.IT.TTO0200
             boss.Bonus = 500;
             boss.Car = "VW Golf";
             Console.WriteLine(boss.ToString());
+            Console.ReadLine();
             
         }
     }
