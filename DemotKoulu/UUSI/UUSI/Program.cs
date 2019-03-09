@@ -13,6 +13,7 @@ namespace Jamk.It.OO
         public int Startit;
         public int Voitot;
         public int VoittoProsentti;
+        public int VoittoSumma;
     }
 
         public class OhjastajatTiedot
@@ -41,6 +42,7 @@ namespace Jamk.It.OO
                                     kuski.Nimi = words[0];
                                     kuski.Startit = int.Parse(words[1]);
                                     kuski.Voitot = int.Parse(words[2]);
+                                    kuski.VoittoSumma = float.Parse(words[7]);
                                     // lasketaan voittoprosentti
                                     kuski.VoittoProsentti = (100F*kuski.Voitot/kuski.Startit);
                                     // tulos näkyviin
