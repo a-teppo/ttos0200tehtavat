@@ -83,7 +83,7 @@ namespace Jamk.It.OO
         {
             // 6-7/7
             // Pääsin kohtaa 7 ja tämä kertoo omasta osaamisesta eli hidasta on ja pienikin muutos teettää paljon töitä.
-            // Osasin tehdä lista kaikista mutta nyt jäin kiinni siihen miten saan kaikki tiedot ulos, koska kantaluokka on erilainen
+            // Osasin tehdä listan kaikista olioista mutta nyt jäin kiinni siihen miten saan kaikki tiedot ulos, koska kantaluokka on erilainen
             // ajan kanssa saisin pihalle mutta en tässä ajassa nyt enempää. Nyt toimii tämäkin kohta osittain.
             //
             try
